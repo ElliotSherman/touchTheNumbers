@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch the Numbers</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body onload="init()">
+    <h1>Touch the Numbers</h1>
+    <div class="hud">
+        <table class="difficulty">
+            <thead>
+                <tr>
+                    <th colspan="3">Select a difficulty</th>
+                </tr>
+            </thead>
+            <tbody class="difficulty-select"></tbody>
+            <!-- <td onclick="changeDifficulty()">16</td>
+            <td>25</td>
+            <td>36</td> -->
+        </table>
+        <p class="time">Time Elapsed: <span></span></p>
+        <p class="next-num">Next Num: <span></span></p>
+        <button onclick="reset(this)" class='newgame-btn'>Start New Game</button>
+    </div>
+    <div>
+        <table class="board">
+        </table>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/timer.js"></script>
+</body>
+
+</html>

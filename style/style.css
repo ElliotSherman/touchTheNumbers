@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(255, 248, 220, 0.438);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 60px;
+    text-decoration: underline;
+    color: #a7a4a4;
+}
+
+.hud {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 500px;
+}
+
+.hud p {
+    font-size: x-large;
+}
+
+.newgame-btn {
+    padding: 20px 40px;
+    font-variant: small-caps;
+    font-size: 20px;
+    border-radius: 20px;
+    width: 300px;
+    margin: auto;
+    border-color: rgba(0, 195, 255, 0.718);
+    cursor: pointer;
+}
+
+.newgame-btn:hover {
+    transition: ease-in-out;
+    
+}
+
+.board {
+    border: solid 1px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    margin: 50px auto;
+    border-spacing: 10px;
+    width: 500px;
+    height: 500px;
+}
+
+.board-cell {
+    border-radius: 10px;
+    font-size: x-large;
+    font-style: oblique;
+    color: rgb(101, 101, 101);
+    text-align: center;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    cursor: pointer;
+}
+
+.board-cell:hover {
+    transition: ease-in-out;
+    position: relative;
+    bottom: 3px;
+}
+
+.board-cell-clicked {
+    cursor: default;
+    background: rgb(195, 204, 250);
+    background: linear-gradient(186deg, rgba(195, 204, 250, 1) 0%, rgba(239, 252, 70, 1) 72%);
+}
+
+.board-cell-clicked:hover {
+    bottom: 0;
+}
+.difficulty{
+    width: 300px;
+    margin: auto;
+    border-spacing: 4px;
+    text-align: center;
+}
+
+.difficulty td{
+    padding:30px;
+    border: solid 1px;
+    border-radius: 10px;
+    
+}
+.difficulty td:hover{
+    cursor: pointer;
+    background-color:#a7a4a4;
+}
+.difficulty-selected{
+    background-color:#a7a4a4;
+}
